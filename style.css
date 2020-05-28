@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #ddd;
+  font-family: sans-serif;
+}
+svg{
+  width: 80vmin;
+  background: #333;
+}
+circle{
+  r:0.05;
+  fill:red;
+}
+h1{
+    color: #333;
+    text-align: center;
+}
+.buttons{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+button{
+  font-size: 30px;
+  padding: 20px;
+}
