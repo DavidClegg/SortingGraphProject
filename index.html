@@ -1,0 +1,36 @@
+<!--
+  This is the default page:
+    Either this will be the entire project in one page at once
+    Or this will be the first sort, with the ability to change the sort:
+      Either each sort is a seperate page
+      or have a dropdown and swap the assets in and out
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Algorithms</title>
+  </head>
+  <body>
+      <header>
+      <h1> Allsorts of sorts </h1>
+      </header>
+      <svg id="graph">
+        <!-- Grid -->
+      </svg>
+      <div class="buttons">
+        <button onclick="sort(array)">Sort</button>
+        <button onclick="clearOldBars(); array = shuffle(array); generateBars(array);">Shuffle</button>
+        <button onclick="clearOldBars();">Clear</button>
+      </div>
+      <footer>
+
+      </footer>
+  </body>
+
+  <!-- Scripts -->
+  <!-- These have to be on the bottom so they load after the graphs and buttons that they reference. -->
+  <script src="sorts/basicSort.js" charset="utf-8"></script>
+</html>
